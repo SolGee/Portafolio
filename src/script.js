@@ -1,27 +1,54 @@
-//HIDE & SHOW
+const getData = async(url) => {
+    const response = await fetch(url);
+    return await response.json();
+};
 
-const hideSection = id => document.getElementById(id).classList.add('hide');
-const showSection = id => document.getElementById(id).classList.remove('hide');
+const dataApi = "./projects.json";
 
-//BUTTON
+const main = async() => {
+    const fullData = await getData(dataApi);
+    showData(fullData);
+};
 
-const menuBtn = document.getElementById('menu');
-const closeBtn = document.getElementById('close');
+const projects = document.getElementById('project-container');
 
-//MENU
 
-const menu = document.getElementById('mobile-menu-list');
 
-//FUNCTIONS
+const templateStringForProjects = (element) => {
+    return `<div class="card" style="background-image:url('${element.imgDesktop}')">
+    <div class="card-hover">
+       <div class="text">
+          <h3 class="title">${element.name}</h3>
+          <p class="description">${element.description}</p>
+          <p>
+          <i class="${element.html}"></i>
+          <i class="${element.css}"></i>
+          <i class="${element.js}"></i>
+          <i class="${element.node}"></i> 
+             </p>
+             <p class="links">
+                <a href="${element.ghpages}" target="_blank">
+                   <i class="fas fa-external-link-alt"></i>
+                </a> 
+                <a href="${element.repository}" target="_blank">
+                   <i class="fab fa-github"></i>
+                </a>
+          </p>
+       </div>
+       </div>
+    
+ </div>
+    `
 
-showMenu = () => {
-    showSection('menu');
-}
+};
 
-menuBtn.addEventListener('click', showMenu);
+const showData = (data) => {
+    let items = '';
+    data.forEach((element) => {
+        items +=
+            templateStringForProjects(element);
+    });
+    return projects.innerHTML = items;
+};
 
-closeMenu = () => {
-    hideSection('menu');
-}
-
-closeBtn.addEventListener('click', closeMenu);
+window.addEventListener('load', main);
