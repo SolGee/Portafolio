@@ -23,8 +23,10 @@ const templateStringForProjects = (element) => {
           <p>
           <i class="${element.html}"></i>
           <i class="${element.css}"></i>
-          <i class="${element.js}"></i>
-          <i class="${element.node}"></i> 
+          <img src="${element.js}" alt="javascript"/>
+          <i class="${element.node}"></i>
+          <i class="${element.reactjs}"></i>
+          <i class="${element.sass}"></i> 
              </p>
              <p class="links">
                 <a href="${element.ghpages}" target="_blank">
@@ -52,3 +54,6 @@ const showData = (data) => {
 };
 
 window.addEventListener('load', main);
+
+
+/* SCROLL */

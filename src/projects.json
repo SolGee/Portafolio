@@ -1,24 +1,25 @@
-[
-    {
+[{
         "id": 0,
         "name": "Get Schwifty!",
         "imgDesktop": "img/getschwifty.png",
-        "date":"Julio 2019",
-        "html":"fab fa-html5",
+        "date": "Julio 2019",
+        "html": "fab fa-html5",
         "css": "fab fa-css3-alt",
-        "js": "fab fa-js",
+        "js": "img/js.svg",
         "description": "Web App que promete ayudar a los nuevos fans de la Serie 'Rick and Morty' a filtrar los personajes de la serie, sus dimensiones de origen, especies, tipos, estatus y género.",
         "repository": "https://github.com/SolGee/MEX-Data-Lovers-008",
         "ghpages": "https://solgee.github.io/MEX-Data-Lovers-008/src"
     },
     {
         "id": 1,
-        "name": "Lab-car",
+        "name": "Burger Queen",
         "imgDesktop": "img/labcar.png",
-        "date":"Julio 2019",
-        "html":"fab fa-html5",
+        "date": "Julio 2019",
+        "html": "fab fa-html5",
         "css": "fab fa-css3-alt",
-        "js": "fab fa-js",
+        "js": "img/js.svg",
+        "sass": "fab fa-sass",
+        "reactjs": "fab fa-react",
         "description": "Web App sobre una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras. A través de la API geolocation de Google permite conocer la ubicación del usuario una vez que ingresa al sitio web.",
         "repository": "https://github.com/SolGee/Lab-ar",
         "ghpages": "https://solgee.github.io/Lab-ar/"
@@ -26,10 +27,10 @@
     {
         "id": 2,
         "name": "md-links",
-        "imgDesktop":"img/mdlinks.png",
-        "date":"Septiembre 2019",
-        "js": "fab fa-js",
-        "node":"fab fa-node-js",
+        "imgDesktop": "img/mdlinks.png",
+        "date": "Septiembre 2019",
+        "js": "img/js.svg",
+        "node": "fab fa-node-js",
         "description": "Libreria funcional que se capaz de retornar los links que se encuentran dentro de un archivo markdown y validar aquellos que aun funcionan o no desde la línea de comandos o como una API en un archivo JavaScript requiriendola como módulo.",
         "repository": "https://github.com/SolGee/MEX008-FE-md-link"
     }

@@ -287,6 +287,23 @@ nav a {
     }
 }
 
+
+/*CARDS*/
+
+#project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card {
+    width: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media only screen and (min-width: 567px) {
     #about-me-container {
         position: relative;
