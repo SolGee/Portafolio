@@ -1,0 +1,379 @@
+/* BOX-SIZING */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* GLOBALES */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+section,
+nav {
+    margin: 0 auto;
+    display: flex;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 90vw;
+    height: 90%;
+}
+
+nav figure {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+nav figure img {
+    width: 5rem;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(56, 1, 52);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    color: rgb(56, 1, 52);
+}
+
+#desktop-menu {
+    display: none;
+}
+
+#desktop-menu a {
+    text-decoration: none;
+    transition: font-weight 0.2s;
+}
+
+#desktop-menu a:hover {
+    font-weight: 600;
+}
+
+#hero {
+    background-image: url('./img/hero.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hero article {
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(56, 1, 52);
+    margin: 0.5rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#mobile-menu {
+    display: flex;
+    position: relative;
+}
+
+#mobile-menu-list {
+    flex-direction: column;
+    display: none;
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 66%, rgba(247, 210, 226, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 66%, rgba(247, 210, 226, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 66%, rgba(247, 210, 226, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7d2e2', GradientType=0);
+    /* IE6-9 */
+    -webkit-box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.14);
+    transition: all 0.5s;
+    transform: translateX(10%);
+}
+
+#menu:hover #mobile-menu-list {
+    transform: translateX(-100%);
+}
+
+#about-me-container {
+    display: none;
+}
+
+#gradient-border {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e07676', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#bio {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+#bio div {
+    display: flex;
+    width: 40%;
+}
+
+#bio figure {
+    position: relative;
+    width: 50%;
+    margin: 0;
+}
+
+#bio img {
+    position: absolute;
+    top: -20%;
+    right: -5%;
+}
+
+#about-me-container-mobile {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    margin: 0;
+    background-color: blue;
+}
+
+
+/*CONTACT ICONS*/
+
+.icon {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    color: #f1f1f1;
+}
+
+.icon::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e02c2f+0,ea7e8e+100 */
+    background: rgb(224, 44, 47);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(224, 44, 47, 1) 0%, rgba(234, 126, 142, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(224, 44, 47, 1) 0%, rgba(234, 126, 142, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(224, 44, 47, 1) 0%, rgba(234, 126, 142, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e02c2f', endColorstr='#ea7e8e', GradientType=0);
+    /* IE6-9 */
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.icon::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.icon:hover::before {
+    animation: animation 0.7s 1;
+    transition: all 0.5s;
+}
+
+@keyframes animation {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 15%;
+        top: -30%;
+    }
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
+@media only screen and (min-width: 567px) {
+    #about-me-container {
+        position: relative;
+        margin: 0;
+        width: 80%;
+        height: 90%;
+        justify-content: center;
+        display: flex;
+    }
+    #about-me-container-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    section,
+    nav {
+        width: 1200px;
+    }
+    #desktop-menu {
+        display: flex;
+        width: 60%;
+    }
+    #hero {
+        background-position: center;
+    }
+    #mobile-menu {
+        display: none;
+    }
+    #about-me {
+        height: auto;
+    }
+    #about-me-container {
+        min-height: 350px;
+    }
+    #gradient-border {
+        top: 12.5px;
+        left: 15%;
+        width: 810px;
+        height: 310px;
+    }
+    #bio-container {
+        position: absolute;
+        display: flex;
+        top: 5%;
+        left: 5%;
+    }
+    #bio {
+        width: 800px;
+        height: 300px;
+    }
+    #bio div p {
+        width: 100%;
+    }
+    #bio div ul {
+        width: 50%;
+        height: 4rem;
+        padding: 0;
+        justify-content: space-between;
+    }
+    #contact {
+        display: flex;
+        width: 5rem;
+        height: 300px;
+    }
+    #contact ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #contact li {
+        min-width: 3rem;
+        display: flex;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 3rem;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    #contact a {
+        color: white;
+        text-decoration: none;
+    }
+    #contact li:nth-child(3) {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
