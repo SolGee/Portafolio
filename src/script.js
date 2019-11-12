@@ -17,27 +17,31 @@ const projects = document.getElementById('project-container');
 const templateStringForProjects = (element) => {
     return `<div class="card">
     <figure>
-    <img class="img-project" src="${element.imgDesktop}" alt="${element.name}"/>
+        <img class="img-project" src="${element.imgDesktop}" alt="${element.name}"/>
     </figure>
        <div class="caption">
-          <h3 class="title">${element.name}</h3>
-          <p class="description">${element.description}</p>
-          <p class="icons">
-          <i class="${element.html}"></i>
-          <i class="${element.css}"></i>
-          <img src="${element.js}" alt="javascript" class="js"/>
-          <i class="${element.node}"></i>
-          <i class="${element.reactjs}"></i>
-          <i class="${element.sass}"></i> 
-             </p>
-             <p class="links">
-                <a href="${element.ghpages}" target="_blank">
-                   <i class="fas fa-external-link-alt"></i>
-                </a> 
-                <a href="${element.repository}" target="_blank">
-                   <i class="fab fa-github"></i>
-                </a>
-          </p>
+       <div class="caption-container">
+            <div class="header-project">
+                <h3 class="title">${element.name}</h3>
+                <p class="links">
+                    <a href="${element.ghpages}" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a> 
+                    <a href="${element.repository}" target="_blank">
+                        <i class="fab fa-github"></i>
+                     </a>
+                </p>
+            </div>
+            <p class="description">${element.description}</p>
+            <p class="icons">
+                <i class="${element.html}"></i>
+                <i class="${element.css}"></i>
+                <img src="${element.js}" alt="javascript" class="js"/>
+                <i class="${element.node}"></i>
+                <i class="${element.reactjs}"></i>
+                <i class="${element.sass}"></i> 
+            </p>
+        </div>
        </div>
     
  </div>

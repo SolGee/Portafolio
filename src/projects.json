@@ -13,14 +13,14 @@
     {
         "id": 1,
         "name": "Burger Queen",
-        "imgDesktop": "img/labcar.png",
+        "imgDesktop": "img/pandmonium.jpg",
         "date": "Julio 2019",
         "html": "fab fa-html5",
         "css": "fab fa-css3-alt",
         "js": "img/js.svg",
         "sass": "fab fa-sass",
         "reactjs": "fab fa-react",
-        "description": "Web App sobre una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras. A través de la API geolocation de Google permite conocer la ubicación del usuario una vez que ingresa al sitio web.",
+        "description": "Web App desarrollada con ReactJS que permite digitalizar la toma de comandas de la antojería vegana Pand'monium.",
         "repository": "https://github.com/SolGee/Lab-ar",
         "ghpages": "https://solgee.github.io/Lab-ar/"
     },
@@ -31,7 +31,7 @@
         "date": "Septiembre 2019",
         "js": "img/js.svg",
         "node": "fab fa-node-js",
-        "description": "Libreria funcional que se capaz de retornar los links que se encuentran dentro de un archivo markdown y validar aquellos que aun funcionan o no desde la línea de comandos o como una API en un archivo JavaScript requiriendola como módulo.",
+        "description": "Libreria funcional que se capaz de retornar los links que se encuentran dentro de un archivo .md y validar aquellos que aun funcionan desde la línea de comandos o como una API en un archivo JavaScript requiriendola como módulo.",
         "repository": "https://github.com/SolGee/MEX008-FE-md-link"
     }
 ]

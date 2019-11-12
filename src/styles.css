@@ -171,7 +171,7 @@ nav a {
     position: absolute;
     top: 15%;
     left: 10%;
-    background: rgb(255, 255, 255);
+    background: rgba(224, 118, 118, 1);
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
     /* FF3.6-15 */
@@ -306,7 +306,10 @@ nav a {
 }
 
 .card figure {
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-project {
@@ -323,14 +326,23 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(41, 39, 41);
     transition: all 0.5s;
-    background-color: black;
+    background: rgba(224, 118, 118, 1);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e07676', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
     transform: translateY(-100%);
 }
 
 .caption p {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .card:hover .caption {
@@ -354,9 +366,81 @@ nav a {
 
 .icons i {
     font-size: 1.5rem;
+    color: rgb(224, 44, 47);
+}
+
+.caption-container {
+    width: 90%;
+    height: 90%;
+}
+
+.header-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    color: rgba(224, 44, 47, 0.5);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.links a:hover {
+    color: rgb(224, 44, 47);
+    transition: all 0.5s;
+}
+
+
+/*SKILLS*/
+
+#skills {
+    height: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    background-color: rgb(29, 29, 104);
+}
+
+.soft-skills {
+    width: 40%;
+    background-color: rgb(133, 133, 34);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.soft-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.soft-skills li {
+    width: 20%;
+    height: auto;
+    background-color: pink;
+    text-align: center;
+}
+
+.soft-skills figure {
+    width: 4rem;
+    height: 4rem;
+    background-color: purple;
 }
 
 @media only screen and (min-width: 567px) {
+    #gradient-border {
+        width: 400px;
+        height: 800px;
+    }
     #about-me-container {
         position: relative;
         margin: 0;
@@ -370,7 +454,10 @@ nav a {
     }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:769px) {
+    article {
+        height: auto;
+    }
     section,
     nav {
         width: 1200px;
