@@ -170,9 +170,8 @@ nav a {
 #gradient-border {
     width: 100%;
     height: 90vh;
-    position: absolute;
-    top: 15%;
-    left: 10%;
+    position: relative;
+    top: 1%;
     background: rgba(224, 118, 118, 1);
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 1%, rgba(224, 118, 118, 1) 99%);
@@ -189,6 +188,7 @@ nav a {
     width: 400px;
     height: 200px;
     display: flex;
+    flex-direction: column;
     padding: 1rem;
     justify-content: space-around;
     background-color: #ffffff;
@@ -295,9 +295,10 @@ nav a {
 #project-container {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -305,6 +306,7 @@ nav a {
     height: 300px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .card figure {
@@ -452,6 +454,68 @@ nav a {
     width: 65%;
 }
 
+
+/*CONTACT*/
+
+#bio-container {
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 5%;
+    flex-direction: column;
+}
+
+#bio {
+    width: 800px;
+    height: 300px;
+}
+
+#bio div p {
+    width: 100%;
+}
+
+#bio div ul {
+    width: 50%;
+    height: 4rem;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#contact {
+    display: flex;
+    width: 5rem;
+    height: 300px;
+}
+
+#contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact li {
+    min-width: 3rem;
+    display: flex;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact li:nth-child(3) {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 @media only screen and (min-width: 567px) {
     article {
         margin: 1rem 0;
@@ -493,61 +557,35 @@ nav a {
         min-height: 350px;
     }
     #gradient-border {
+        position: absolute;
         width: 810px;
         height: 310px;
         top: 12.5px;
         left: 15%;
     }
-    #bio-container {
-        position: absolute;
-        display: flex;
-        top: 5%;
-        left: 5%;
-    }
-    #bio {
-        width: 800px;
-        height: 300px;
-    }
-    #bio div p {
-        width: 100%;
-    }
-    #bio div ul {
-        width: 50%;
-        height: 4rem;
-        padding: 0;
-        justify-content: space-between;
-    }
-    #contact {
-        display: flex;
-        width: 5rem;
-        height: 300px;
-    }
-    #contact ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    #contact li {
-        min-width: 3rem;
-        display: flex;
-        font-size: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        min-height: 3rem;
-        border: 2px solid white;
-        border-radius: 50%;
-    }
-    #contact a {
-        color: white;
-        text-decoration: none;
-    }
-    #contact li:nth-child(3) {
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
     .skill {
         width: 45%;
+    }
+    #projects {
+        height: auto;
+    }
+    #project-container {
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    #bio-container {
+        flex-direction: row;
+    }
+    #bio {
+        flex-direction: row;
+    }
+    #contact ul {
+        flex-direction: column;
+    }
+    .card {
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -582,5 +620,8 @@ nav a {
     }
     .skill {
         width: 70%;
+    }
+    #about-me-container {
+        display: none;
     }
 }
