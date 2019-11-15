@@ -50,6 +50,10 @@ h2 {
     color: rgb(56, 1, 52);
 }
 
+img {
+    height: auto;
+}
+
 
 /*NAVBAR*/
 
@@ -204,7 +208,8 @@ nav figure img {
 }
 
 #bio img {
-    max-width: 70vw;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -585,15 +590,15 @@ footer .contact {
     }
     #bio figure {
         width: 20%;
-        height: auto;
+        height: 100%;
         margin: 0;
         position: relative;
     }
     #bio img {
-        width: 250px;
+        max-width: 70vw;
+        width: auto;
         position: absolute;
         right: -2rem;
-        top: -7rem;
     }
     .contact ul {
         flex-direction: column;
