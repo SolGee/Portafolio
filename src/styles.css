@@ -515,7 +515,7 @@ nav figure img {
 footer {
     display: flex;
     justify-content: center;
-    background-color: pink;
+    background-color: rgb(253, 138, 157);
 }
 
 footer .contact {
