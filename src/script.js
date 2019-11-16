@@ -1,9 +1,9 @@
-const getData = async(url) => {
+const getData = async url => {
     const response = await fetch(url);
     return await response.json();
 };
 
-const dataApi = "./projects.json";
+const dataApi = './projects.json';
 
 const main = async() => {
     const fullData = await getData(dataApi);
@@ -12,9 +12,7 @@ const main = async() => {
 
 const projects = document.getElementById('project-container');
 
-
-
-const templateStringForProjects = (element) => {
+const templateStringForProjects = element => {
     return `<div class="card">
     <figure>
         <img class="img-project" src="${element.imgDesktop}" alt="${element.name}"/>
@@ -45,20 +43,36 @@ const templateStringForProjects = (element) => {
        </div>
     
  </div>
-    `
-
+    `;
 };
 
-const showData = (data) => {
+const showData = data => {
     let items = '';
-    data.forEach((element) => {
-        items +=
-            templateStringForProjects(element);
+    data.forEach(element => {
+        items += templateStringForProjects(element);
     });
-    return projects.innerHTML = items;
+    return (projects.innerHTML = items);
 };
 
 window.addEventListener('load', main);
 
+/* MENU */
 
-/* SCROLL */
+const show = id => document.getElementById(id).classList.add('show');
+
+const hide = id => document.getElementById(id).classList.add('hide');
+
+const menuBtn = document.getElementById('menu');
+const closeBtn = document.getElementById('close');
+
+const showMenu = () => {
+    show('mobile-menu-list');
+};
+
+// const hideMenu = () => {
+
+//     hide('mobile-menu-list');
+// };
+
+menuBtn.addEventListener('click', showMenu);
+// closeBtn.addEventListener('click', hideMenu);
