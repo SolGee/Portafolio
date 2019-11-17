@@ -60,19 +60,21 @@ window.addEventListener('load', main);
 
 const show = id => document.getElementById(id).classList.add('show');
 
-const hide = id => document.getElementById(id).classList.add('hide');
+const hide = id => document.getElementById(id).classList.remove('show');
 
 const menuBtn = document.getElementById('menu');
 const closeBtn = document.getElementById('close');
 
-const showMenu = () => {
+const showMenu = e => {
+    e.preventDefault();
     show('mobile-menu-list');
 };
 
-// const hideMenu = () => {
-
-//     hide('mobile-menu-list');
-// };
-
 menuBtn.addEventListener('click', showMenu);
-// closeBtn.addEventListener('click', hideMenu);
+
+const hideMenu = e => {
+    e.preventDefault();
+    hide('mobile-menu-list');
+};
+
+closeBtn.addEventListener('click', hideMenu);

@@ -95,7 +95,6 @@ nav figure img {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    background-color: yellow;
     width: 100%;
 }
 
@@ -115,17 +114,7 @@ nav figure img {
     top: -5vh;
     width: 100vw;
     height: 105vh;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e07676+0,ffffff+6 */
-    background: rgb(224, 118, 118);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(224, 118, 118, 1) 0%, rgba(255, 255, 255, 1) 6%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(224, 118, 118, 1) 0%, rgba(255, 255, 255, 1) 6%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(224, 118, 118, 1) 0%, rgba(255, 255, 255, 1) 6%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e07676', endColorstr='#ffffff', GradientType=1);
-    /* IE6-9 */
+    background-color: white;
 }
 
 .hide {
@@ -155,10 +144,19 @@ nav figure img {
     color: rgb(74, 74, 74);
 }
 
-#mobile-menu-list ul li:nth-child(1) {
+#close-li {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.menu-element {
+    padding: 2rem;
+}
+
+.menu-element:hover {
+    background-color: #f5afaf;
+    transition: all 0.5s;
 }
 
 
