@@ -114,7 +114,7 @@ nav figure img {
     top: -5vh;
     width: 100vw;
     height: 105vh;
-    background-color: white;
+    background-color: #f5afaf;
 }
 
 .hide {
@@ -141,7 +141,9 @@ nav figure img {
 
 #mobile-menu-list a {
     font-weight: 600;
-    color: rgb(74, 74, 74);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.36);
 }
 
 #close-li {
@@ -152,11 +154,6 @@ nav figure img {
 
 .menu-element {
     padding: 2rem;
-}
-
-.menu-element:hover {
-    background-color: #f5afaf;
-    transition: all 0.5s;
 }
 
 
