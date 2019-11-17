@@ -99,8 +99,7 @@ nav figure img {
 }
 
 #menu,
-#desktop-menu a,
-#close {
+#desktop-menu a {
     color: rgb(56, 1, 52);
 }
 
@@ -128,7 +127,7 @@ nav figure img {
 }
 
 #mobile-menu-list ul {
-    width: 100%;
+    width: 90vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -150,6 +149,13 @@ nav figure img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+#close i {
+    background-color: #f08a8a;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 .menu-element {
