@@ -113,7 +113,7 @@ nav figure img {
     top: -5vh;
     width: 100vw;
     height: 105vh;
-    background-color: #8c7af3;
+    background-color: #5f51ac;
 }
 
 .hide {
@@ -152,10 +152,10 @@ nav figure img {
 }
 
 #close i {
-    color: #7549ee;
-    border: 4px solid #7549ee;
-    font-size: 2rem;
-    padding: 1rem;
+    color: #422a83;
+    border: 4px solid #422a83;
+    font-size: 1.5rem;
+    padding: 0.7rem;
     border-radius: 50%;
     text-shadow: none;
 }
