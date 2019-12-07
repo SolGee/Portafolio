@@ -198,6 +198,7 @@ nav figure img {
 
 #hero p {
     font-size: 1.5rem;
+    text-align: right;
     font-weight: 400;
     margin: 0.5rem;
     font-family: 'Roboto Condensed', sans-serif;
