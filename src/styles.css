@@ -171,6 +171,7 @@ nav figure img {
 #hero {
     background-image: url('./img/hero.jpg');
     background-repeat: no-repeat;
+    background-position: right;
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
@@ -188,7 +189,8 @@ nav figure img {
 }
 
 #hero h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: rgb(56, 1, 52);
     margin: 0.5rem;
@@ -549,6 +551,12 @@ footer .contact {
     /*HERO*/
     #hero {
         background-position: center;
+    }
+    #hero article {
+        text-align: center;
+    }
+    #hero h1 {
+        font-size: 3rem;
     }
     /*ABOUT ME*/
     #about-me {

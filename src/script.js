@@ -63,7 +63,7 @@ const show = id => document.getElementById(id).classList.add('show');
 const hide = id => document.getElementById(id).classList.remove('show');
 
 const menuBtn = document.getElementById('menu');
-const closeBtn = document.getElementById('close');
+const closeBtn = document.getElementById('close-li');
 const homeBtn = document.getElementById('home-btn');
 const aboutBtn = document.getElementById('about-btn');
 const projectBtn = document.getElementById('projects-btn');
@@ -80,12 +80,10 @@ menuBtn.addEventListener('click', showMenu);
 const hideMenu = e => {
     e.preventDefault();
     hide('mobile-menu-list');
-    console.log('aiuda');
 };
 
 const showSection = () => {
     hide('mobile-menu-list');
-    console.log('aiuda');
 };
 
 closeBtn.addEventListener('click', hideMenu);
